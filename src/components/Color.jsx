@@ -29,6 +29,19 @@ const Color = ({
         className="hexValue"
         value={colorInput === "color" ? fontColor : backgroundColor}
         onClick={() => setOpen((prev) => !prev)}
+        maxLength={7}
+        onChange={(e) => {
+          let value = e.target.value;
+          if (/^[0-9a-fA-F#]+$/.test(value)) {
+            // setColor({ hex: e.target.value, rgb: {}, hsv: {} });
+            if (colorInput === "color") {
+              setFontColor(value);
+            }
+            if (colorInput === "backgroundColor") {
+              setBackgroundColor(value);
+            }
+          }
+        }}
       />
 
       {open && (
