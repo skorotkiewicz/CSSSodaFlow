@@ -21,11 +21,16 @@ const Panel = () => {
   const [fontColor, setFontColor] = useState("#121212");
   const [backgroundColor, setBackgroundColor] = useState("#ffffff");
   const [style, setStyle] = useState({});
-  const [viewStyle, setViewStyle] = useState({
-    "font-family:": "verdana, sans-serif",
-    "font-size:": "12px",
-  });
+  const [viewStyle, setViewStyle] = useState({});
   const didMount = useRef(false);
+
+  useEffect(() => {
+    setViewStyle({
+      ...viewStyle,
+      "font-family:": "verdana, sans-serif",
+      "font-size:": "12px",
+    });
+  }, []);
 
   useEffect(() => {
     if (didMount.current) {
