@@ -18,9 +18,9 @@ const Buttons = ({ handleOption, viewStyle }) => {
     { name: "bold", icon: faBold },
     { name: "italic", icon: faItalic },
     { name: "underline", icon: faUnderline },
-    { name: "line-through", icon: faM }, // todo
-    { name: "uppercase", icon: uppercase }, // todo
-    { name: "small-caps", icon: faM }, // todo
+    { name: "line-through", icon: faM },
+    { name: "uppercase", icon: uppercase },
+    { name: "small-caps", icon: faM },
     { name: "left", icon: faAlignLeft },
     { name: "center", icon: faAlignCenter },
     { name: "right", icon: faAlignRight },
