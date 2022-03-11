@@ -20,8 +20,11 @@ const Panel = () => {
   const [colorInput, setColorInput] = useState("color");
   const [fontColor, setFontColor] = useState("#121212");
   const [backgroundColor, setBackgroundColor] = useState("#ffffff");
-  const [style, setStyle] = useState([]);
-  const [viewStyle, setViewStyle] = useState([]);
+  const [style, setStyle] = useState({});
+  const [viewStyle, setViewStyle] = useState({
+    "font-family:": "verdana, sans-serif",
+    "font-size:": "12px",
+  });
   const didMount = useRef(false);
 
   useEffect(() => {
