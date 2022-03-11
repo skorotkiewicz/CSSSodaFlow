@@ -10,7 +10,13 @@ const Footer = () => {
       </p>
       <p>CSS Soda Flow &copy; 2022</p>
       <p>
-        <a href="">Opensource</a>
+        <a
+          href="https://github.com/skorotkiewicz/CSSSodaFlow"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Opensource
+        </a>
       </p>
     </div>
   );
